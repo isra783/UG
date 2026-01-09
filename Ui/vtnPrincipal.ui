@@ -18,7 +18,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>sistema administrativo de persona</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="lblNombre">
@@ -90,8 +90,8 @@
    <widget class="QPushButton" name="btnGuardar">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>220</y>
+      <x>210</x>
+      <y>280</y>
       <width>91</width>
       <height>31</height>
      </rect>
@@ -107,6 +107,39 @@
      <string>Guardar</string>
     </property>
    </widget>
+   <widget class="QLabel" name="lblcedula">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>190</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>       cedula:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="txtcedula">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>200</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="maxLength">
+     <number>20</number>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -114,7 +147,7 @@
      <x>0</x>
      <y>0</y>
      <width>532</width>
-     <height>27</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
@@ -123,6 +156,7 @@
  <tabstops>
   <tabstop>txtNombre</tabstop>
   <tabstop>txtApellido</tabstop>
+  <tabstop>txtcedula</tabstop>
   <tabstop>btnGuardar</tabstop>
  </tabstops>
  <resources/>

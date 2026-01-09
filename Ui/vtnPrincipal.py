@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'untitled.ui'
+## Form generated from reading UI file 'vtnPrincipal.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.10.1
 ##
@@ -51,18 +51,27 @@ class Ui_vtnPrincipal(object):
         self.txtNombre.setMaxLength(20)
         self.btnGuardar = QPushButton(self.centralwidget)
         self.btnGuardar.setObjectName(u"btnGuardar")
-        self.btnGuardar.setGeometry(QRect(200, 220, 91, 31))
+        self.btnGuardar.setGeometry(QRect(210, 280, 91, 31))
         self.btnGuardar.setFont(font1)
+        self.lblcedula = QLabel(self.centralwidget)
+        self.lblcedula.setObjectName(u"lblcedula")
+        self.lblcedula.setGeometry(QRect(40, 190, 101, 41))
+        self.lblcedula.setFont(font1)
+        self.txtcedula = QLineEdit(self.centralwidget)
+        self.txtcedula.setObjectName(u"txtcedula")
+        self.txtcedula.setGeometry(QRect(150, 200, 101, 31))
+        self.txtcedula.setMaxLength(20)
         vtnPrincipal.setCentralWidget(self.centralwidget)
         self.menubar = QMenuBar(vtnPrincipal)
         self.menubar.setObjectName(u"menubar")
-        self.menubar.setGeometry(QRect(0, 0, 532, 27))
+        self.menubar.setGeometry(QRect(0, 0, 532, 21))
         vtnPrincipal.setMenuBar(self.menubar)
         self.statusbar = QStatusBar(vtnPrincipal)
         self.statusbar.setObjectName(u"statusbar")
         vtnPrincipal.setStatusBar(self.statusbar)
         QWidget.setTabOrder(self.txtNombre, self.txtApellido)
-        QWidget.setTabOrder(self.txtApellido, self.btnGuardar)
+        QWidget.setTabOrder(self.txtApellido, self.txtcedula)
+        QWidget.setTabOrder(self.txtcedula, self.btnGuardar)
 
         self.retranslateUi(vtnPrincipal)
 
@@ -70,9 +79,10 @@ class Ui_vtnPrincipal(object):
     # setupUi
 
     def retranslateUi(self, vtnPrincipal):
-        vtnPrincipal.setWindowTitle(QCoreApplication.translate("vtnPrincipal", u"MainWindow", None))
+        vtnPrincipal.setWindowTitle(QCoreApplication.translate("vtnPrincipal", u"sistema administrativo de persona", None))
         self.lblNombre.setText(QCoreApplication.translate("vtnPrincipal", u"NOMBRE :", None))
         self.lblApellido.setText(QCoreApplication.translate("vtnPrincipal", u"APELLIDO :", None))
         self.btnGuardar.setText(QCoreApplication.translate("vtnPrincipal", u"Guardar", None))
+        self.lblcedula.setText(QCoreApplication.translate("vtnPrincipal", u"       cedula:", None))
     # retranslateUi
 
